@@ -143,7 +143,7 @@ To get a local copy up and running follow these simple example steps.
 -   Type the names of the games into the input (3 - 5 games needed).
 -   You won't be able to pass on until you insert at least 3 games.
 -   You can delete a game by hitting the trash can icon.
--   Click "Player 1 Vote >" button when ready.
+-   Click "[Player 1 Name] >" button when ready.
 
 3. Each person votes
 
@@ -164,6 +164,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Roadmap
 
+-   [x] Player names instead of player numbers on buttons.
 -   [ ] Clear state on hitting "Start Again".
 -   [ ] Total calculated automatically on loading results page, instead of hitting calculate button.
 -   [ ] Custom url
