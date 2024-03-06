@@ -136,19 +136,28 @@ const VotingPage = ({ params }) => {
     return (
         <>
             <Container>
-                <Typography
-                    variant="h5"
-                    component="h1"
-                    gutterBottom
-                    align="center"
-                    mt={2}
-                    mb={2}
+                <Box
+                    sx={{
+                        maxWidth: '350px',
+                        margin: '0 auto',
+                    }}
                 >
-                    Player {params.player}: {currentPlayer.name}
-                </Typography>
-                <Typography variant="body2" align="center" mb={3}>
-                    Reorder the games the game you want to play most to least:
-                </Typography>
+                    <Typography
+                        variant="h5"
+                        component="h1"
+                        gutterBottom
+                        align="center"
+                        mt={2}
+                        mb={2}
+                    >
+                        Player {params.player}: {currentPlayer.name}
+                    </Typography>
+                    <Typography variant="body2" align="center" mb={3}>
+                        Drag the games to order the games. Games you most want
+                        to play at the top and those you least want to play at
+                        the botttom:
+                    </Typography>
+                </Box>
 
                 <Box
                     sx={{

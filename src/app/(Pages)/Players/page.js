@@ -15,7 +15,6 @@ import {
     Paper,
     IconButton,
 } from '@mui/material';
-import Link from 'next/link';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
@@ -29,7 +28,7 @@ const PlayersPage = () => {
     const handleAddPlayer = (e) => {
         e.preventDefault();
         if (name === '') return;
-        if (players.length > 8) return;
+        if (players.length > 7) return;
         dispatch(addPlayer(name));
         setName('');
     };
@@ -59,11 +58,13 @@ const PlayersPage = () => {
                     sx={{
                         maxWidth: '350px',
                         margin: '0 auto',
+                        paddingBottom: '100px',
                     }}
                 >
                     <TextField
                         id="outlined-basic"
-                        label="Player"
+                        label="Player's Name"
+                        helperText="2 - 8 players"
                         variant="outlined"
                         value={name}
                         onChange={(e) => setName(e.target.value)}

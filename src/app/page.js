@@ -2,12 +2,12 @@
 
 import Image from 'next/image';
 import Button from '@mui/material/Button';
-import Link from 'next/link';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useRouter } from 'next/navigation';
 import { resetGames } from '@/lib/features/games/gamesSlice';
 import { resetVotes } from '@/lib/features/votes/votesSlice';
 import { resetPlayers } from '@/lib/features/players/playersSlice';
+import { Typography } from '@mui/material';
 
 export default function Home() {
     const router = useRouter();
@@ -19,6 +19,8 @@ export default function Home() {
         dispatch(resetPlayers());
         router.push('/Players');
     };
+    const today = new Date();
+    const year = today.getFullYear();
 
     return (
         <main className="homebg">
@@ -32,6 +34,14 @@ export default function Home() {
             >
                 Lets Vote..
             </Button>
+            <Typography
+                variant="body2"
+                gutterBottom
+                align="center"
+                sx={{ color: 'white', position: 'absolute', bottom: '10px' }}
+            >
+                By Patrick Alvarez © {year}
+            </Typography>
         </main>
     );
 }
