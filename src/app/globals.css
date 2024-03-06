@@ -1,0 +1,80 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+    --header: #27b57b;
+    --dark: #223743;
+    --light-grey: #eef1f3;
+    --med-grey: #b2bdc2;
+    --fontSize-sm: 12px;
+    --fontSize: 14px;
+    --fontSize-lg: 16px;
+    --fontSize-xl: 18px;
+    --fontFamily: 'Karla', sans-serif;
+}
+
+.app-pages {
+    height: 100vh;
+}
+
+.homebg {
+    background-color: var(--dark);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.homebg h1 {
+    font-size: 60px;
+    color: var(--light-grey);
+    font-weight: 600;
+}
+
+.lightBtn {
+    background-color: var(--light-grey);
+    color: var(--dark);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* RESULTS COMPONENT */
+
+.resultBox {
+    text-align: center;
+}
+
+.resultBox ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.resultBox li {
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.resultBox li::marker {
+    content: '';
+}
+.resultBox li:first-child {
+    font-size: 25px;
+    border: 2px solid var(--dark);
+    border-radius: 8px;
+    padding: 10px 10px;
+    background-color: var(--dark);
+    color: white;
+}
+
+.result-item {
+    font-weight: 700;
+    list-style: none;
+}
