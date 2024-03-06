@@ -25,7 +25,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Patchalv/vote-game-app-v6">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="/public/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Vote to Play!</h3>
@@ -70,7 +70,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://vote-game-five.vercel.app/)
+<img src="/public/images/product-use-screenshot.gif" width="350">
 
 One of the things my friends and I like to do on Saturday is crack open a few beers and spend the afternoon playing board games. Pretty much everytime we'll end up asking the question "What game do you want to play?" and spend a load time trying to work out what to play.
 
@@ -129,7 +129,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Usage
 
-[![Product Use][product-use-screenshot]]
+![Product Use][product-use-screenshot]
 
 1. Players
 
