@@ -129,7 +129,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Usage
 
-<img src="/public/images/product-use-screenshot.gif" width="150">
+<img src="/public/images/product-use-screenshot.gif" width="450">
 
 1. Players
 
