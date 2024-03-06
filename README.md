@@ -81,10 +81,10 @@ Now all you need to do is pop in the names of 2-5 games you might play, and each
 And then it'll just calculate it for you and give you the list in order of how they were ranked.
 
 Arguments avoided.
-Time saved.
-Beer drank.
 
-Use the `BLANK_README.md` to get started.
+Time saved.
+
+Beer drank.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -227,9 +227,9 @@ Some resources that I found helpful and would like to give credit to:
 
 <!-- Project Specfic -->
 
-[product-screenshot]: images/screenshot.png
-[product-logo]: images/logo.png
-[product-use-screenshot]: images/product-use-screenshot.gif
+[product-screenshot]: /images/screenshot.png
+[product-logo]: /images/logo.png
+[product-use-screenshot]: /images/product-use-screenshot.gif
 
 <!-- Project Shields -->
 
