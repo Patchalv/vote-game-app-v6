@@ -1,13 +1,13 @@
 import Header from '../(components)/Header/Header';
-import AppBar from '@mui/material/AppBar';
-import Typography from '@mui/material/Typography';
+import Loading from './loading';
 import '../globals.css';
+import { Suspense } from 'react';
 
 export default function PageLayout({ children }) {
     return (
         <main className="app-pages">
             <Header text="Vote to play!" />
-            {children}
+            <Suspense fallback={<Loading />}>{children}</Suspense>
         </main>
     );
 }

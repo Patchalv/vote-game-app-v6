@@ -21,19 +21,19 @@
 .homebg {
     background-color: var(--dark);
     height: 100vh;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 30px; */
 }
 
-.homebg h1 {
+/* .homebg h1 {
     font-size: 60px;
     color: var(--light-grey);
     font-weight: 600;
-}
+} */
 
 .lightBtn {
     background-color: var(--light-grey);

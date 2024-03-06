@@ -57,6 +57,7 @@ const GamesPage = () => {
                     sx={{
                         maxWidth: '350px',
                         margin: '0 auto',
+                        paddingBottom: '100px',
                     }}
                 >
                     <TextField
@@ -69,6 +70,7 @@ const GamesPage = () => {
                         fullWidth
                         sx={{ mb: '20px' }}
                     />
+
                     {games.map((game) => (
                         <Card
                             key={game.id}

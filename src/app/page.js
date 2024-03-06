@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import { resetGames } from '@/lib/features/games/gamesSlice';
 import { resetVotes } from '@/lib/features/votes/votesSlice';
 import { resetPlayers } from '@/lib/features/players/playersSlice';
-import { Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 
 export default function Home() {
     const router = useRouter();
@@ -24,24 +24,54 @@ export default function Home() {
 
     return (
         <main className="homebg">
-            <Image src="/images/logo.png" height={150} width={150} alt="logo" />
-            <h1>Vote to Play!</h1>
-            <Button
-                variant="filled"
-                size="large"
-                sx={{ backgroundColor: '#eef1f3' }}
-                onClick={() => handleButtonClick()}
+            <Container
+                sx={{
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: 5,
+                }}
             >
-                Lets Vote..
-            </Button>
-            <Typography
-                variant="body2"
-                gutterBottom
-                align="center"
-                sx={{ color: 'white', position: 'absolute', bottom: '10px' }}
-            >
-                By Patrick Alvarez © {year}
-            </Typography>
+                <Image
+                    src="/images/logo.png"
+                    height={150}
+                    width={150}
+                    alt="logo"
+                />
+                <Typography
+                    variant="h2"
+                    component="h1"
+                    gutterBottom
+                    align="center"
+                    sx={{ color: 'white' }}
+                >
+                    Vote to Play
+                </Typography>
+                <Button
+                    variant="filled"
+                    size="large"
+                    sx={{ backgroundColor: '#eef1f3' }}
+                    onClick={() => handleButtonClick()}
+                >
+                    Lets Vote..
+                </Button>
+            </Container>
+            {/* <Box>
+                <Typography
+                    variant="body2"
+                    gutterBottom
+                    align="center"
+                    sx={{
+                        color: 'white',
+                        position: 'absolute',
+                        bottom: '10px',
+                    }}
+                >
+                    By Patrick Alvarez © {year}
+                </Typography>
+            </Box> */}
         </main>
     );
 }
