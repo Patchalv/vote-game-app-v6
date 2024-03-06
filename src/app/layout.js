@@ -24,12 +24,13 @@ export const metadata = {
                 url: 'https://vote-game-five.vercel.app/images/social2.png', // Must be an absolute URL
                 width: 800,
                 height: 600,
+                alt: 'Photo by Aksel Fristrup on Unsplash',
             },
             {
                 url: 'https://vote-game-five.vercel.app/images/social2.png', // Must be an absolute URL
                 width: 1800,
                 height: 1600,
-                alt: 'My custom alt',
+                alt: 'Photo by Aksel Fristrup on Unsplash',
             },
         ],
         locale: 'en_US',
@@ -53,6 +54,33 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+            <head>
+                <link
+                    rel="apple-touch-icon"
+                    sizes="144x144"
+                    href="/favicon/apple-touch-icon.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="32x32"
+                    href="/favicon/favicon-32x32.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="16x16"
+                    href="/favicon/favicon-16x16.png"
+                />
+                <link rel="manifest" href="/favicon/site.webmanifest" />
+                <link
+                    rel="mask-icon"
+                    href="/favicon//safari-pinned-tab.svg"
+                    color="#5bbad5"
+                />
+                <meta name="msapplication-TileColor" content="#da532c" />
+                <meta name="theme-color" content="#ffffff" />
+            </head>
             <body className={karla.className}>
                 <Providers>
                     <Suspense fallback={<Loading />}>{children}</Suspense>
