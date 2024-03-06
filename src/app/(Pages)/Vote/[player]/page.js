@@ -78,8 +78,15 @@ const VotingPage = ({ params }) => {
         if (Number(params.player) === 1) {
             return 'Select Games';
         } else {
-            return `Player ${Number(params.player) - 1}`;
+            let previousPlayer = Number(params.player) - 2;
+            return `${players[Number(previousPlayer)].name}`;
         }
+
+        // if (Number(params.player) === 1) {
+        //     return 'Select Games';
+        // } else {
+        //     return `Player ${Number(params.player) - 1}`;
+        // }
     };
     // Route back on click
     const handleClickBack = () => {
@@ -95,10 +102,16 @@ const VotingPage = ({ params }) => {
     // Link text
     const nextButtonLink = () => {
         if (Number(params.player) < players.length) {
-            return `Player ${Number(params.player) + 1}`;
+            return `${players[Number(params.player)].name}`;
         } else {
             return 'Results';
         }
+
+        // if (Number(params.player) < players.length) {
+        //     return `Player ${Number(params.player) + 1}`;
+        // } else {
+        //     return 'Results';
+        // }
     };
 
     // On Next click:

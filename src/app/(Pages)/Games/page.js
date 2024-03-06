@@ -22,6 +22,8 @@ import ExtensionOutlinedIcon from '@mui/icons-material/ExtensionOutlined';
 const GamesPage = () => {
     const [name, setName] = useState('');
     const games = useSelector((state) => state.games);
+    const players = useSelector((state) => state.players);
+
     const dispatch = useDispatch();
 
     const handleAddPlayer = (e) => {
@@ -127,7 +129,7 @@ const GamesPage = () => {
                         endIcon={<ArrowForwardIosIcon />}
                         disabled={games.length > 2 ? false : true}
                     >
-                        <Link href="/Vote/1">Player 1 Vote</Link>
+                        <Link href="/Vote/1">{players[0].name}</Link>
                     </Button>
                 </Stack>
             </Paper>
