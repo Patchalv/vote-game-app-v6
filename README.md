@@ -70,7 +70,7 @@
 
 ## About The Project
 
-<img src="/public/images/product-use-screenshot.gif" width="350">
+![Product Screennshot][product-screenshot]
 
 One of the things my friends and I like to do on Saturday is crack open a few beers and spend the afternoon playing board games. Pretty much everytime we'll end up asking the question "What game do you want to play?" and spend a load time trying to work out what to play.
 
@@ -129,7 +129,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Usage
 
-![Product Use][product-use-screenshot]
+<img src="/public/images/product-use-screenshot.gif" width="150">
 
 1. Players
 
