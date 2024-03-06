@@ -227,9 +227,9 @@ Some resources that I found helpful and would like to give credit to:
 
 <!-- Project Specfic -->
 
-[product-screenshot]: /images/screenshot.png
-[product-logo]: /images/logo.png
-[product-use-screenshot]: /images/product-use-screenshot.gif
+[product-screenshot]: /public/images/screenshot.jpg
+[product-logo]: /public/images/logo.png
+[product-use-screenshot]: /public/images/product-use-screenshot.gif
 
 <!-- Project Shields -->
 
