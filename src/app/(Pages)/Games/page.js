@@ -30,7 +30,7 @@ const GamesPage = () => {
 
     const handleAddPlayer = (e) => {
         e.preventDefault();
-        if (title !== '') return;
+        if (title === '') return;
         if (games.length > 4) return;
         dispatch(addGame(title));
         setTitle('');
