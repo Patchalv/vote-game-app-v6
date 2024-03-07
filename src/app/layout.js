@@ -2,7 +2,7 @@ import { Karla } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
 import { Suspense } from 'react';
-import Loading from './loading';
+import Loading from './(components)/Loading/loading';
 
 const karla = Karla({
     weight: '400',
@@ -21,13 +21,13 @@ export const metadata = {
         siteName: 'Vote to Play!',
         images: [
             {
-                url: 'https://vote-game-five.vercel.app/images/social2.png', // Must be an absolute URL
+                url: 'https://vote-game-five.vercel.app/images/socials.jpg', // Must be an absolute URL
                 width: 800,
                 height: 600,
                 alt: 'Photo by Aksel Fristrup on Unsplash',
             },
             {
-                url: 'https://vote-game-five.vercel.app/images/social2.png', // Must be an absolute URL
+                url: 'https://vote-game-five.vercel.app/images/socials.jpg', // Must be an absolute URL
                 width: 1800,
                 height: 1600,
                 alt: 'Photo by Aksel Fristrup on Unsplash',

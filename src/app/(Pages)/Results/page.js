@@ -11,7 +11,6 @@ import {
     Stack,
     Typography,
     Paper,
-    IconButton,
 } from '@mui/material';
 import DownloadingIcon from '@mui/icons-material/Downloading';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';

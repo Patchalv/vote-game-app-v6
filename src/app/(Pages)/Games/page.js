@@ -51,12 +51,6 @@ const GamesPage = () => {
         } else {
             return 'Player 1';
         }
-
-        // if (Number(params.player) < players.length) {
-        //     return `Player ${Number(params.player) + 1}`;
-        // } else {
-        //     return 'Results';
-        // }
     };
 
     return (
