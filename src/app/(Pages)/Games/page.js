@@ -22,7 +22,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import ExtensionOutlinedIcon from '@mui/icons-material/ExtensionOutlined';
 const GamesPage = () => {
     const router = useRouter();
-    const [name, setName] = useState('');
+    const [title, setTitle] = useState('');
     const games = useSelector((state) => state.games);
     const players = useSelector((state) => state.players);
 
@@ -30,10 +30,10 @@ const GamesPage = () => {
 
     const handleAddPlayer = (e) => {
         e.preventDefault();
-        if (name === '') return;
+        if (title !== '') return;
         if (games.length > 4) return;
-        dispatch(addGame(name));
-        setName('');
+        dispatch(addGame(title));
+        setTitle('');
     };
 
     const handleDeleteGame = (e, id) => {
@@ -44,8 +44,6 @@ const GamesPage = () => {
     const handleClickNext = () => {
         router.push('/Vote/1');
     };
-
-    const player1Name = players[0].name;
 
     return (
         <>
@@ -75,8 +73,8 @@ const GamesPage = () => {
                         label="Game name"
                         helperText="3 - 5 games"
                         variant="outlined"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
+                        value={title}
+                        onChange={(e) => setTitle(e.target.value)}
                         fullWidth
                         sx={{ mb: '20px' }}
                     />
@@ -138,7 +136,7 @@ const GamesPage = () => {
                         disabled={games.length > 2 ? false : true}
                         onClick={handleClickNext}
                     >
-                        {player1Name}
+                        {players[0].name}
                     </Button>
                 </Stack>
             </Paper>
