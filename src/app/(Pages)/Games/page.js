@@ -15,11 +15,13 @@ import {
     IconButton,
 } from '@mui/material';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ExtensionOutlinedIcon from '@mui/icons-material/ExtensionOutlined';
 const GamesPage = () => {
+    const router = useRouter();
     const [name, setName] = useState('');
     const games = useSelector((state) => state.games);
     const players = useSelector((state) => state.players);
@@ -37,6 +39,10 @@ const GamesPage = () => {
     const handleDeleteGame = (e, id) => {
         e.preventDefault();
         dispatch(deleteGame(id));
+    };
+
+    const handleClickNext = () => {
+        router.push('/Vote/1');
     };
 
     const player1Name = players[0].name;
@@ -130,8 +136,9 @@ const GamesPage = () => {
                         variant="contained"
                         endIcon={<ArrowForwardIosIcon />}
                         disabled={games.length > 2 ? false : true}
+                        onClick={handleClickNext}
                     >
-                        <Link href="/Vote/1">{player1Name}</Link>
+                        {player1Name}
                     </Button>
                 </Stack>
             </Paper>
