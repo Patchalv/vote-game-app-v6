@@ -39,6 +39,8 @@ const GamesPage = () => {
         dispatch(deleteGame(id));
     };
 
+    const player1Name = players[0].name;
+
     return (
         <>
             <Container>
@@ -129,7 +131,7 @@ const GamesPage = () => {
                         endIcon={<ArrowForwardIosIcon />}
                         disabled={games.length > 2 ? false : true}
                     >
-                        <Link href="/Vote/1">{players[0].name}</Link>
+                        <Link href="/Vote/1">{player1Name}</Link>
                     </Button>
                 </Stack>
             </Paper>

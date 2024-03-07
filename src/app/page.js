@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import { resetGames } from '@/lib/features/games/gamesSlice';
 import { resetVotes } from '@/lib/features/votes/votesSlice';
 import { resetPlayers } from '@/lib/features/players/playersSlice';
-import { Box, Container, Typography } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 
 export default function Home() {
     const router = useRouter();
