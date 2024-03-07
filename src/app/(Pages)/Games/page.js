@@ -70,7 +70,7 @@ const GamesPage = () => {
                 >
                     <TextField
                         id="outlined-basic"
-                        label="Game name"
+                        label="Game title input"
                         helperText="3 - 5 games"
                         variant="outlined"
                         value={title}
@@ -136,7 +136,7 @@ const GamesPage = () => {
                         disabled={games.length > 2 ? false : true}
                         onClick={handleClickNext}
                     >
-                        {players[0].name}
+                        Player 1
                     </Button>
                 </Stack>
             </Paper>
