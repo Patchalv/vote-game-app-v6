@@ -26,7 +26,6 @@ const ResultsPage = () => {
         for (let i = 0; i < votes.length; i++) {
             let gameArray = votes[i].games;
             gameArray.forEach((game) => {
-                let gameName = game.name;
                 if (!newTotal.hasOwnProperty(game.name)) {
                     newTotal[game.name] = game.points;
                 } else {
