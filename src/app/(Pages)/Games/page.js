@@ -45,6 +45,20 @@ const GamesPage = () => {
         router.push('/Vote/1');
     };
 
+    const nextButtonLink = () => {
+        if (players.length > 0) {
+            return `${players[0].name}`;
+        } else {
+            return 'Player 1';
+        }
+
+        // if (Number(params.player) < players.length) {
+        //     return `Player ${Number(params.player) + 1}`;
+        // } else {
+        //     return 'Results';
+        // }
+    };
+
     return (
         <>
             <Container>
@@ -136,7 +150,7 @@ const GamesPage = () => {
                         disabled={games.length > 2 ? false : true}
                         onClick={handleClickNext}
                     >
-                        Player 1
+                        {nextButtonLink()}
                     </Button>
                 </Stack>
             </Paper>
